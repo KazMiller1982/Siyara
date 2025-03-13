@@ -1,0 +1,492 @@
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FDF8F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #E74C3C; /* Red Accent Color */
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 60vh; /* Reduced from full screen to 60% height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 40px 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Slightly smaller for better proportion */
+    margin-bottom: 10px;
+}
+
+.hero-content .tagline {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #FFD700; /* Gold for elegance */
+    color: #1F2A40;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #FFC107; /* Brighter gold on hover */
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #1F2A40, #2C3E50);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    width: 200px; /* Slightly smaller for a clean and elegant look */
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5)); /* Adds depth for a refined finish */
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #FFD700;
+    text-transform: uppercase;
+}
+
+#home p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.3); /* Soft overlay for depth */
+    padding: 15px 30px;
+    border-left: 5px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2A40; /* Dark blue for elegance */
+    padding: 15px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.company-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold for a classy look */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-left: 20px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #FFD700;
+    color: #1F2A40;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2C39;
+    padding: 0.8rem 0;
+}
+
+/* Navigation Links */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #E74C3C;
+    border-radius: 5px;
+}
+
+/* Logo */
+nav .logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-left: 1rem;
+}
+
+nav .logo img {
+    height: 32px; /* Smaller logo height for better fit */
+    margin-right: 8px; /* Reduced spacing */
+}
+
+nav .logo h1 {
+    font-size: 1.2rem; /* Slightly smaller text to match the resized logo */
+    margin: 0;
+}
+
+/* Gallery Section */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    width: 280px;
+    height: 280px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Filter Buttons for Gallery */
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.filter-buttons button:hover {
+    background-color: #C0392B;
+}
+
+/* Artist Spotlight Section */
+#artists {
+    background-color: #f8f9fa; /* Softer background for a cleaner look */
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#artists h2 {
+    font-size: 2.8rem;
+    color: #2c3e50; /* Deep navy for a more professional feel */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.artist-spotlight {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    background: #ffffff;
+    border: 4px solid #4a69bd; /* Richer blue for stronger visual impact */
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow for depth */
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px); /* Smooth hover effect */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.artist-info {
+    padding: 20px;
+    background-color: #ecf0f1; /* Subtle contrast for text area */
+}
+
+.artist-info h3 {
+    font-size: 1.6rem;
+    color: #4a69bd; 
+    margin-bottom: 8px;
+}
+
+.artist-info p {
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.artist-info strong {
+    display: inline-block;
+    color: #2d3436;
+    font-weight: bold;
+    background-color: #dfe6e9;
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* Events Section */
+#events {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#countdown {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #E74C3C;
+}
+
+/* Services Section */
+#services {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#services p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.package-card {
+    background: #ffffff;
+    border: 3px solid #6a89cc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.package-card h3 {
+    font-size: 1.6rem;
+    color: #6a89cc;
+    margin-bottom: 15px;
+}
+
+.package-details {
+    border-top: 2px solid #6a89cc;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.package-details h4 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.package-details p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.package-card:hover {
+    background-color: #eef1f7;
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Additional Services */
+#additional-services {
+    background: #FAF3F3;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px solid #E74C3C;
+    border-bottom: 5px solid #FFD700;
+}
+
+.additional-services-content h2 {
+    font-size: 2.8rem;
+    color: #1F2A40;
+    margin-bottom: 10px;
+}
+
+.additional-service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.additional-card {
+    background-color: #2C3E50;
+    border: 3px solid transparent;
+    background-image: linear-gradient(#2C3E50, #2C3E50), 
+                      linear-gradient(135deg, #FFD700, #FFB800);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border-radius: 15px;
+    padding: 25px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.additional-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(255, 215, 0, 0.4);
+}
+
+.additional-card img {
+    width: 70px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 6px rgba(255, 215, 0, 0.3));
+}
+
+.additional-card h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.additional-card p {
+    color: #D3D3D3;
+    margin-bottom: 10px;
+}
+
+.additional-card span {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+button.service-btn {
+    background-color: #FFD700;
+    color: #1F2A40;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.service-btn:hover {
+    background-color: #FFC107;
+    transform: scale(1.1);
+}
+
+
+/* Contact Section */
+#contact {
+    text-align: center;
+    background-color: #FAF3F3;
+    padding: 20px;
+    border-top: 5px solid #E74C3C;
+}
+
+#contactForm {
+    display: inline-block;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Contact Form Fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #E74C3C;
+    border-radius: 8px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #E74C3C;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #C0392B;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2C3E50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer-logo {
+    width: 80px; /* Smaller size for a cleaner footer look */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing above the copyright text */
+    display: block; /* Ensures it's centered if needed */
+    margin-left: auto;
+    margin-right: auto;
+}
